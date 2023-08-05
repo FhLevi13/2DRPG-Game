@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4020430114094378717}
   - component: {fileID: 3958580988531398796}
   - component: {fileID: 8934380846205440340}
+  - component: {fileID: 773802580054767544}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fa51cf686ce855146a96fda65c25eda8, type: 3}
+  m_Actions: {fileID: 0}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -193,3 +194,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.080405295, y: 0.010241419}
   m_EdgeRadius: 0
+--- !u!95 &773802580054767544
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723468421631294186}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d7c277e7e3b0154cacd6a0ec91e9f85, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
