@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 252279983361808627, guid: d74ddaad1d6b7654baf515793a878e7c, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: fa51cf686ce855146a96fda65c25eda8, type: 3}
+    - target: {fileID: 252279983361808627, guid: d74ddaad1d6b7654baf515793a878e7c, type: 3}
+      propertyPath: m_DefaultActionMap
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020430114094378717, guid: d74ddaad1d6b7654baf515793a878e7c, type: 3}
+      propertyPath: movementFilter.layerMask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5723468421631294186, guid: d74ddaad1d6b7654baf515793a878e7c, type: 3}
       propertyPath: m_Name
       value: Player
