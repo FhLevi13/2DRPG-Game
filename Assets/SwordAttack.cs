@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    public Collider2D swordCollider;
+    public float damage = 3;
+
     Vector2 attackOffset;
-    Collider2D swordCollider;
 
     private void Start() {
-        swordCollider = GetComponent<Collider2D>();
         attackOffset = transform.position;
     }
 
     public void AttackRight() {
         swordCollider.enabled = true;
-        transform.position = attackOffset;
+        transform.localPosition = attackOffset;
     }
 
     public void AttackLeft() {
         swordCollider.enabled = true;
-        transform.position = new Vector3(attackOffset.x * -1, attackOffset.y);
+        transform.localPosition = new Vector3(attackOffset.x * -1, attackOffset.y);
     }
 
     public void StopAttack() {
@@ -27,8 +28,13 @@ public class SwordAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Slime") {
+        if (other.tag == "Enemy") {
             // memberikan damage pada musuh
+            Slime slime = other.GetComponent<Slime>();
+
+            if (slime != null) {
+                slime.Health -= damage;
+            }
         }
     }
 }
